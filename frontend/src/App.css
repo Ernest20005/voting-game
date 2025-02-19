@@ -1,0 +1,149 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+.joke-box {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+.joke-box:hover {
+  transform: scale(1.02);
+}
+
+
+.question {
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+}
+
+.answer {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #555;
+}
+
+
+.votes {
+  margin-top: 15px;
+}
+
+
+.vote-btn {
+  margin: 5px;
+  padding: 12px 18px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #ffcc00;
+  transition: all 0.3s ease;
+}
+
+.vote-btn:hover {
+  background-color: #ffb300;
+  transform: scale(1.1);
+}
+
+.vote-btn.disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+  transform: none;
+}
+
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 12px 18px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.next-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.next-btn:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+
+
+.add-joke {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  width: 85%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+
+.add-joke button {
+  background-color: #3498db;
+  color: white;
+}
+
+.add-joke button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
